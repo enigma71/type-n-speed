@@ -1,0 +1,45 @@
+<header id="result_page" style="display: none;">
+  <div class="container">
+    <div class="row d-flex align-content-center">
+      <div class="col-md-7" style="height: 550px;padding-top: 20px;">
+        <div class="headline">
+          <div class="headline-content">
+            <p class="headline-subtitle" style="text-align: left;">Here are</p>
+            <h2 class="headline-title display-4" style="text-align: left; margin-left: 80px;">Your Sources</h2>
+            <br>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row">Words per minute: </th>
+                  <td id="idwpm"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Wordcount: </th>
+                  <td id="idwc"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Errors: </th>
+                  <td id="iderr"></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="/">
+              <button type="button" class="btn btn-success rounded-pill" id="done_cool">
+                {% load static %}
+                <img src={% static 'img/check-w.svg' %} alt="Reset" width="18" height="18"> Okey </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5" style="height: 550px;padding-top: 20px;">
+        <div class="headline">
+          <div class="headline-content">
+            {% load static %}
+            <img height="300px" class="float-right" style="margin-right: 80px;"
+              src={% static 'img/undraw_result_5583.svg' %} alt="My Happy SVG" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

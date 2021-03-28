@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block head %} <title>Leaderboard || Typenspeed</title> {% endblock head %}
+
+{% block body %}
+
+
+
+
+<header id="start_page">
+    <div class="container">
+        <div class="row d-flex align-content-center">
+            <div class="col-md-6">
+                <div class="headline">
+                    <div class="headline-content">
+                        <br>
+                        {% load static %}
+                        <img height="250px" class="float-left" style="margin-left: 40px; margin-top: 80px;"
+                            src={% static 'img/undraw_winners_ao2o.svg' %} alt="My Happy SVG" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="headline">
+                    <div class="headline-content">
+                        <h2 class="headline-title display-4" style="margin-right: 40px; margin-top: -60px; text-align:center;">Top Scorer
+                        </h2>
+                        <table class="table table-s" style="margin-right: 40px;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Score (WpM)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                {% for obj in objectSet %}
+                                <tr>
+                                    <th scope="row">{{obj.name}}</th>
+                                    <td>{{obj.type_speed}}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+{% endblock body %}
