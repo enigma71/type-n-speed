@@ -2,10 +2,10 @@
 <div align="center">
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-r1-blue.svg?cacheSeconds=2592000" />
-  <a href="placeholsersdfasda" target="_blank">
+  <a href="https://github.com/enigma71/type-n-speed/blob/main/README.md" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="placeholter" target="_blank">
+  <a href="https://github.com/enigma71/type-n-speed/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 </p>
