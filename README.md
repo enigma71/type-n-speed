@@ -5,10 +5,17 @@
   <a href="https://github.com/enigma71/type-n-speed/blob/main/README.md" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
+    <a href="#" target="_blank">
+    <img alt="Code Quality" src="https://www.code-inspector.com/project/20596/status/svg" />
+  </a>
   <a href="https://github.com/enigma71/type-n-speed/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+
 </p>
+
+  
+
 
 > A django based web app to test your typing speed.
 
