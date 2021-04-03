@@ -1,7 +1,7 @@
+import itertools
 from django.shortcuts import render
 from .models import userScore
 from .forms import userNameForm
-import itertools
 
 # Create your views here.
 
@@ -19,8 +19,8 @@ def homepage(request):
 
 
 def leaderboard(request):
-    top_scores = (userScore.objects.order_by('-type_speed').values_list('type_speed', flat=True).distinct())
-    top_records = (userScore.objects.order_by('-type_speed').filter(type_speed__in=top_scores[:10]))
+    top_scores = userScore.objects.order_by('name', '-type_speed').distinct('name')
+    top_records = userScore.objects.filter(id__in=top_scores).order_by('-type_speed')
     top10 = itertools.islice(top_records, 10)
     context = {
         'objectSet' : top10
