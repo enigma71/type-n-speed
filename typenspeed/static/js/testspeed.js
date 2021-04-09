@@ -96,6 +96,11 @@ $(document).ready(function () {
 
   var wordcount = 0;
 
+  var timer = 0;
+  var wpm = 0;
+  var errors = 0;
+  var interval_timer;
+
   $("html, body").click(function () {
     $("#textarea").focus();
   });
@@ -137,10 +142,6 @@ $(document).ready(function () {
     }
   });
 
-  var timer = 0;
-  var wpm = 0;
-  var errors = 0;
-  var interval_timer;
 
   $("#reset").click(function () {
     reset();
@@ -177,6 +178,8 @@ $(document).ready(function () {
     $("#your-attempt").text("");
     index = 0;
     errors = 0;
+    wpm = 0;
+    wordcount = 0;
     clearInterval(interval_timer);
     started = false;
     letters = $("#input_text").val();
@@ -185,7 +188,6 @@ $(document).ready(function () {
     $("#wordcount").text("0");
     $("#errors").text("0");
     timer = 0;
-    wpm = 0;
     current_string = letters.substring(index, index + character_length);
     $("#target").text(current_string);
   }
