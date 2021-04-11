@@ -19,7 +19,7 @@
 
 </div>
 
-<h3 align="center"><a href="https://typenspeed.ml">🏠 Homepage</a></h3>
+<h3 align="center"><a href="https://typenspeed.ml" target="_blank">🏠 Homepage</a></h3>
 
 
 ## Install
