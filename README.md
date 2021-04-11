@@ -11,17 +11,16 @@
   <a href="https://github.com/enigma71/type-n-speed/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-
 </p>
-
-  
-
 
 > A django based web app to test your typing speed.
 
+<img src="./typenspeed/static/img/preview_md.png" width="600" alt="Preview">
+
 </div>
 
-### 🏠 [Homepage](https://typenspeed.ml)
+<h3 align="center"><a href="https://typenspeed.ml">🏠 Homepage</a></h3>
+
 
 ## Install
 ```sh
